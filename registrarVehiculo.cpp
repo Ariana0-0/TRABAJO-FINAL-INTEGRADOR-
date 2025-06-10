@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-typedef struct {
+struct Vehiculo {
 	char placa[10];
 	char cedula[11];
 	int anio;
@@ -13,36 +13,36 @@ typedef struct {
 
 void registrarVehiculo() {
 	
-	Vehiculo v;
+	struct Vehiculo v;
 	
-	printf("\n--- Registro de Vehículo ---\n");
+	printf("\n--- Registro de VehÃ­culo ---\n");
 	
 	printf("Ingrese la placa: ");
 	scanf("%s", v.placa);
 	
-	printf("Ingrese la cédula: ");
+	printf("Ingrese la cÃ©dula: ");
 	scanf("%s", v.cedula);
 	
-	printf("Ingrese el año del vehículo: ");
+	printf("Ingrese el aÃ±o del vehÃ­culo: ");
 	scanf("%d", &v.anio);
 	
-	printf("Ingrese el tipo de vehículo: ");
+	printf("Ingrese el tipo de vehÃ­culo: ");
 	scanf("%s", v.tipo);
 	
-	printf("Ingrese el avalúo del vehículo: ");
+	printf("Ingrese el avalÃºo del vehÃ­culo: ");
 	scanf("%f", &v.avaluo);
 	// Inicializa revisiones en 0
 	for (int i = 0; i < 3; i++) {
 		v.revisiones[i] = 0;
 	}
-		printf("Vehículo registrado correctamente.\n");
+		printf("VehÃ­culo registrado correctamente.\n");
 	// Muestra los datos ingresados
-	printf("\n----- Datos del Vehículo -----\n");
+	printf("\n----- Datos del VehÃ­culo -----\n");
 	printf("Placa: %s\n", v.placa);
-	printf("Cédula: %s\n", v.cedula);
-	printf("Año: %d\n", v.anio);
+	printf("CÃ©dula: %s\n", v.cedula);
+	printf("AÃ±o: %d\n", v.anio);
 	printf("Tipo: %s\n", v.tipo);
-	printf("Avalúo: %.2f\n", v.avaluo);
+	printf("AvalÃºo: %.2f\n", v.avaluo);
 }
 int main() {
 	
