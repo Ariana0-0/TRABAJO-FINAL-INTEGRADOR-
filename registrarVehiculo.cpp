@@ -7,7 +7,7 @@ struct Vehiculo {
 	char tipo[20];
 	float avaluo;
 	int revisiones[3];
-} ;
+};
 
 
 
